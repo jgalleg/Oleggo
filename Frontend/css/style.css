@@ -1,0 +1,181 @@
+#HomeBody{
+
+    height: 1000px;
+    background: #F05651; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right top, #F05651, #F6884C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, #F05651, #F6884C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, #F05651, #F6884C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom left, #F05651, #F6884C); /* Standard syntax (must be last) */
+    font-size: 22px    !important;
+    color: white;
+}
+body{
+
+    height: 1000px;
+    background: #F05651; /* For browsers that do not support gradients */
+    font-size: 22px    !important;
+    color: white;
+}
+#userinfo{
+    display: block;
+    width: 200px;
+    color:#bca
+}
+
+.navbar{
+  background: #D0D4D6;
+  color: #3E4A58;
+}
+.navbar-brand{
+  color: #3E4A58;
+  font-weight: bold;
+  font-size: 28px;
+}
+.nav navbar-nav{
+    color:#3E4A58;
+}
+
+.div{
+    text-align: center;
+
+}
+
+.grey-box{
+  background-color: grey;
+  height: 370px;
+  width: 280px;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+h4.text-label {
+    text-transform: uppercase;
+    font-family: 'Domine', serif;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    padding-bottom: 0.5em;
+}
+.btn-primary{
+  font-size: 20px;
+}
+
+.btn-info{
+  font-size: 20px;
+}
+#myModal{
+  color: black;
+}
+
+#text {
+    padding:25px;
+    border:1px solid #AABBCC;
+    color: #AAA;
+}
+#bookDescription {
+    padding:25px;
+    border:1px solid #AABBCC;
+    text-align: center;
+    color: white
+    ;
+}
+
+#logo h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+#logo span {
+    background: #0cc;
+    display: inline-block;
+    padding: 0.3em;
+    margin-right: 0.3em;
+    color: #333;
+}
+
+#clock p {
+    text-align: right;
+    margin-top: 1.3em;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+#temperatureChart {
+    margin: 20px 0;
+}
+
+#switches {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#switches p {
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+.switch {
+    margin-bottom: 20px;
+}
+
+.rgb-status span {
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+    border: 1px solid #fff;
+    border-radius: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.light-status {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 500px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+.on.blue {
+    background: blue;
+}
+
+.on.red {
+    background: red;
+}
+
+.on.yellow {
+    background: yellow;
+    color: black;
+}
+
+.on.green {
+    background: green;
+}
+
+.on.cyan {
+    background: cyan;
+    color: black;
+}
+
+.on.magenta {
+    background: magenta;
+    color: black;
+}
+
+.on.black {
+    background: black;
+}
+
+.on.white {
+    background: white;
+    color: black;
+}
+
+.large {
+    font-size:24px;
+}
