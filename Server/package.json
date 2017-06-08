@@ -1,0 +1,19 @@
+{
+  "name": "oleggo",
+  "version": "0.1.0",
+  "description": "oleggo server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julian Gallego",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "ajax-request": "^1.2.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "node-isbn": "^1.3.0",
+    "q": "^1.5.0"
+  }
+}

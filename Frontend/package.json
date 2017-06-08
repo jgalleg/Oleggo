@@ -1,0 +1,21 @@
+{
+  "name": "Segnalibro",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Julian",
+  "contributors": [
+    "Laura Mira",
+    "Nicolas Rojas"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-switch": "^3.3.4",
+    "jquery": "^3.2.1"
+  }
+}

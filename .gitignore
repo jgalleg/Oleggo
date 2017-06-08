@@ -1,6 +1,5 @@
 node_modules/
 .ftpconfig
-package.json
 .DS_Store
 img/
 trabajo.html
