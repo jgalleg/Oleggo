@@ -3,12 +3,14 @@ const bodyParser = require('body-parser')
 const http = require('http')
 const https = require('https')
 const crypto = require('crypto')
-const reports = require('./reports.js')
+
 
 const C = require('./common.js')
 const HTTPError = require('./common.js').HTTPError
 const db = require('./db.js')
 const user = require('./user.js')
+const book = require('./isbn.js')
+const reports = require('./reports.js')
 
 const HTTP_PORT = 8080
 const HTTPS_PORT = 8081
@@ -42,7 +44,9 @@ var JSONParser = bodyParser.json({ limit: BODY_SIZE_MAX })
 db.init().then(function() {
     try {
         httpd.use("/", JSONParser, user.router)
+        httpd.use("/book", JSONParser, book.router)
         httpd.use("/report", JSONParser, user.validateBodyToken, reports.router)
+        httpd.use('/Home', express.static("../Frontend"))
         httpd.all("*", function(req, res) {
             res.status(404).send("404 Not found")
         })

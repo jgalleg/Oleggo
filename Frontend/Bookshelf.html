@@ -16,78 +16,120 @@
       <title>Bookshelf</title>
   </head>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" style="color:#3E4A58;" href="#">Oleggo</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="file:./index.html">Home</a></li>
-          <li class="active"><a href="#">Library <span class="sr-only">(current)</span></a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="file:./Book.html">Book1</a></li>
-              <li><a href="#">Book2</a></li>
-              <li><a href="#">Book3</a></li>
-              <li><a href="#">Book4</a></li>
-              <li><a href="#">Book5</a></li>
-            </ul>
-          </li>
-        </ul>
-
-        <form class="navbar-form navbar-right" id="book_search">
-          Search for a book <input type="text" class="form-control" name="isbn" value="100 años de soledad">
-          <button type="submit" class="btn btn-primary" id="search">Search</button>
-        </form>
-
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
   <body id="page1">
-
-    </form>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Add Book</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book2</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book3</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book4</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book5</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book6</div></div>
-
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book2</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book3</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book4</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book5</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book6</div></div>
-
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book2</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book3</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book4</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book5</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book6</div></div>
-
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book2</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book3</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book4</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book5</div></div>
-            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"><div class="grey-box" >Book6</div></div>
-          </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="color:#3E4A58;" href="#">Oleggo</a>
         </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://192.168.1.114:8080/Home/index.html">Home</a></li>
+            <li class="active"><a href="#">Library <span class="sr-only">(current)</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://192.168.1.114:8080/Home/Book.html">Book1</a></li>
+                  <li><a href="#">Book2</a></li>
+                  <li><a href="#">Book3</a></li>
+                  <li><a href="#">Book4</a></li>
+                  <li><a href="#">Book5</a></li>
+                </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-right" id="book_search">
+            Search for a book <input type="text" class="form-control" name="isbn" value="100 años de soledad">
+            <button type="submit" class="btn btn-primary" id="search">Search</button>
+          </form>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button id="addbook" data-toggle="modal" data-target="#myModal" >+</button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+              <button class="grey-box" ></button>
+            </div>
+
+        </div>
+
       </div>
   </body>
+
+  <!-- Modal -->
+   <div id="myModal" class="modal fade" role="dialog">
+     <div class="modal-dialog">
+       <!-- Modal content-->
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Add a new book</h4>
+         </div>
+         <div class="modal-body">
+           <p>Introduce the ISBN code of the book you want to add to your library.</p>
+           <form>
+               <div class="form-group">
+                   <label style="margin-right: 8px" for="userFilter">ISBN</label>
+                   <input type="text" class="form-control" id="isbncode">
+               </div>
+           </form>
+         </div>
+         <div class="modal-footer">
+           <button  type="button" class="btn btn-primary btn-lg" id="submit-isbn">Submit</button>
+           <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">Close</button>
+         </div>
+       </div>
+
+     </div>
+   </div>
 
 
  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -95,6 +137,6 @@
  <!-- Include all compiled plugins (below), or include individual files as needed -->
  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
  <script src="node_modules/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
- <script src="js/bookshelf.js"></script>
+ <script src="js/Bookshelf.js"></script>
 
 </html>

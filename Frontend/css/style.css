@@ -9,10 +9,18 @@
     font-size: 22px    !important;
     color: white;
 }
-body{
 
-    height: 1000px;
-    background: #F05651; /* For browsers that do not support gradients */
+.modal-header{
+  background: #3e4a58; /* For browsers that do not support gradients */
+  color:white;
+}
+.modal-body{
+
+}
+body{
+    height: 1500px;
+    background: #3e4a58; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(top bottom, #3b4554 , #3e4a58); /* For Safari 5.1 to 6.0 */
     font-size: 22px    !important;
     color: white;
 }
@@ -39,14 +47,24 @@ body{
     text-align: center;
 
 }
-
-.grey-box{
-  background-color: grey;
-  height: 370px;
-  width: 280px;
-  font-size: 2em;
+#addbook{
+  background: #e59057;
+  background-size: 190px 280px;
+  height: 280px;
+  width: 190px;
+  color:#3E4A58;
+  font-size: 200px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 22px;
+}
+.grey-box{
+  background: url("http://books.google.com/books/content?id=GZAoAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api");
+  background-size: 190px 280px;
+  height: 280px;
+  width: 190px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 22px;
 }
 h4.text-label {
     text-transform: uppercase;
@@ -78,104 +96,4 @@ h4.text-label {
     text-align: center;
     color: white
     ;
-}
-
-#logo h2 {
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-top: 1em;
-}
-
-#logo span {
-    background: #0cc;
-    display: inline-block;
-    padding: 0.3em;
-    margin-right: 0.3em;
-    color: #333;
-}
-
-#clock p {
-    text-align: right;
-    margin-top: 1.3em;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 0.9em;
-}
-
-#temperatureChart {
-    margin: 20px 0;
-}
-
-#switches {
-    text-align: center;
-    margin: 2em 0;
-}
-
-#switches p {
-    font-size: 1.8em;
-    font-weight: 100;
-}
-
-.switch {
-    margin-bottom: 20px;
-}
-
-.rgb-status span {
-    width: 32px;
-    height: 32px;
-    font-size: 17px;
-    border: 1px solid #fff;
-    border-radius: 500px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 14px;
-}
-
-.light-status {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #fff;
-    border-radius: 500px;
-    margin: 0 auto;
-    margin-bottom: 14px;
-}
-
-.on.blue {
-    background: blue;
-}
-
-.on.red {
-    background: red;
-}
-
-.on.yellow {
-    background: yellow;
-    color: black;
-}
-
-.on.green {
-    background: green;
-}
-
-.on.cyan {
-    background: cyan;
-    color: black;
-}
-
-.on.magenta {
-    background: magenta;
-    color: black;
-}
-
-.on.black {
-    background: black;
-}
-
-.on.white {
-    background: white;
-    color: black;
-}
-
-.large {
-    font-size:24px;
 }

@@ -6,7 +6,6 @@ const Q = require('q')
 const HTTPError = require('./common.js').HTTPError
 const adapter = require('./userAdapter.js')
 const userVars = require("./common.js").userVars
-const isbn = require('node-isbn');
 
 
 const TOKEN_LENGTH = 64
@@ -99,7 +98,7 @@ var validateBodyToken = function(req, res, next) {
                 else
                 {
                     res.locals.user = user
-                    next()
+                    next(res)
                 }
             }
             else
@@ -225,16 +224,8 @@ router.post("/login", function (req, res, next) {
         .then(function() {
             token += user.id.toString(10)
             let response = { token : token }
+            res.status(200).json(response)
             //if(user.first_login === 1)
-              isbn.resolve('9780545010221', function (err, book) {
-                  if (err) {
-                      console.log('Book not found', err);
-                      res.status(200).json(response)
-                  } else {
-                      console.log('Book found %j', book);
-                      res.status(200).json(response)
-                  }
-            })
         })
 
         .fail(function(error) {
@@ -256,101 +247,6 @@ router.post("/testtoken", function (req, res, next) {
     res.status(200).end()
 })
 
-/*
-
-router.post("/updateinfo", validateBodyToken, function (req, res, next) {
-
-	try {
-
-        if(!req.body)
-
-            throw new HTTPError(400, "Invalid body")
-
-
-
-        console.log("/updateinfo request from %s", req.body.email)
-
-        console.log(JSON.stringify(req.body))
-
-
-
-        var b = req.body
-
-        var u = {}
-
-
-
-        if(b.name) {
-
-            if(b.name.length > userVars.NAME_LENGTH_MAX)
-
-                throw new HTTPError(400, "Invalid name")
-
-
-
-            u.name = b.name
-
-        }
-
-
-
-        if(b.city) {
-
-            if(!b.city.name > userVars.CITY_LENGTH_MAX)
-
-                throw new HTTPError(400, "Invalid city name")
-
-
-
-            if(!b.city.lat || !b.city.lng)
-
-                throw new HTTPError(400, "Invalid city coordinates")
-
-
-
-            u.city = b.city
-
-        }
-
-
-
-        adapter.updateUser(res.locals.user.id, u)
-
-
-
-        .then(function(userUpdated) {
-
-            if(!userUpdated)
-
-                throw new Error("Unable to update user")
-
-            else
-
-                res.status(200).end()
-
-        })
-
-
-
-        .catch(function(error) {
-
-            next(error)
-
-        })
-
-    }
-
-    catch(error) {
-
-        next(error)
-
-    }
-
-})
-
-
-
-*/
 
 module.exports = {}
 module.exports.router = router
