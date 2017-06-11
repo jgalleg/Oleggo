@@ -26,7 +26,7 @@ router.post("/isbn", (req, res) => {
                 console.log('Book not found' + err)
                 res.status(200).json("book not found")
             } else {
-                console.log('Book found' + book.title)
+                console.log('Book found: ' + book.title)
                 res.status(200).json(book)
             }
         })

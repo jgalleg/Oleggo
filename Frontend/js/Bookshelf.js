@@ -1,7 +1,7 @@
 
 function goisbn() {
   console.log(isbncode.value);
-    $.ajax('http://192.168.1.114:8080/book/isbn', {
+    $.ajax('http://192.168.100.2:8080/book/isbn', {
         method: "POST",
         contentType: "application/json",
         data: JSON.stringify({token:localStorage.token,
@@ -10,8 +10,11 @@ function goisbn() {
         dataType: "json",
         success: (data, status, jqXHR) => {
             if(jqXHR.status === 200) {
+              console.log(data);
+              localStorage.book=data
 
-              window.location.href = "http://192.168.1.114:8080/Home/Bookshelf.html"
+
+              //window.location.href = "http://192.168.100.2:8080/Home/Bookshelf.html"
               //  resolve(data)
             }
             else{}
